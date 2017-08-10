@@ -7,9 +7,6 @@ form:
       fields:
         content:
           fields:
-              header.spotlight_img.background:
-                type: colorpicker
-                label: Choose a color as the image-background
               header.readmore.text:
                 type: text
                 label: Readmore-Text
@@ -28,7 +25,7 @@ form:
                   0: 'right'
                 validate:
                   type: bool
-              header.spotlight_img.image:
+              header.spotlight_img:
                 type: filepicker
                 preview_images: true
                 label: Banner Image
