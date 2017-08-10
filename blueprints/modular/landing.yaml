@@ -7,6 +7,10 @@ form:
       fields:
         content:
           fields:
+              header.readmore:
+                type: text
+                label: Readmore-Text
+                default: "Read more"
               header.spotlight_img:
                 type: filepicker
                 preview_images: true
