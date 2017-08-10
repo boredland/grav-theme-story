@@ -17,7 +17,7 @@ form:
                 default: "#"
               header.orient:
                 type: toggle
-                label: Orientation of the Image
+                label: Orientation of the Text
                 highlight: 1
                 default: 1
                 options:
