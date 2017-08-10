@@ -25,7 +25,7 @@ form:
                   0: 'right'
                 validate:
                   type: bool
-              header.bannerimg:
+              header.spotlight_img:
                 type: filepicker
                 preview_images: true
                 label: Banner Image
