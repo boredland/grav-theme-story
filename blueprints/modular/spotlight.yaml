@@ -17,13 +17,11 @@ form:
                 default: "#"
               header.orient:
                 type: toggle
-                label: Orientation of the Text
+                label: Orientation
                 default: left
                 options:
                   left: 'left'
                   right: 'right'
-                validate:
-                  type: bool
               header.spotlight_img:
                 type: filepicker
                 preview_images: true
