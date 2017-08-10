@@ -7,6 +7,14 @@ form:
       fields:
         content:
           fields:
+              header.readmore.text:
+                type: text
+                label: Readmore-Text
+                default: "Readmore"
+              header.readmore.link:
+                type: text
+                label: "Link for Readmore"
+                default: "#"
               header.orient:
                 type: toggle
                 label: Orientation of the Image
