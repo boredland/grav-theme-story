@@ -18,11 +18,10 @@ form:
               header.orient:
                 type: toggle
                 label: Orientation of the Text
-                highlight: 1
-                default: 1
+                default: left
                 options:
-                  1: 'left'
-                  0: 'right'
+                  left: 'left'
+                  right: 'right'
                 validate:
                   type: bool
               header.spotlight_img:
