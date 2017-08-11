@@ -9,7 +9,7 @@
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
                                 {% for item in page.header.portfolio %}
 								<article>
-								<div class="image">
+								<div class="image" style="background-color: {{ item.project_background }};">
 								<img src="{{ page.media[item.projectimg].url }}" alt="{{ item.project_title }}">
 
                             						
