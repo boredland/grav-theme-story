@@ -1,15 +1,17 @@
-
-
-				<!-- Two -->
-					<section class="spotlight style1 orient-{{ header.orient }} content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-                            <h2>{{ page.title }}</h2>
-                            {{ page.content }}
-							<ul class="actions vertical">
-								<li><a href="{{ header.readmore.link }}" class="button">{{ header.readmore.text }}</a></li>
-							</ul>
-						</div>
-						<div class="image {{ page.slug }}">
-                            {{ page.media[header.spotlight_img] }}
-                        </div>
-					</section>
+<!-- Two -->
+<section
+        class="spotlight style1 orient-{{ header.orient }} content-align-left image-position-center onscroll-image-fade-in"
+        id="first">
+    <div class="content">
+        <h2>{{ page.title }}</h2>
+        {{ page.content }}
+        <ul class="actions vertical">
+            {% header.readmore.link %}
+            <li><a href="{{ header.readmore.link }}" class="button">{{ header.readmore.text }}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="image {{ page.slug }}">
+        {{ page.media[header.spotlight_img] }}
+    </div>
+</section>
