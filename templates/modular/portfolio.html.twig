@@ -10,7 +10,7 @@
                                 {% for item in page.header.portfolio %}
 								<article>
                                   
-                                        {{ page.media[item.projectimg].html('{{ item.project_title }}', '{{ item.project_description }}','image') }}
+                                        {{ page.media[item.projectimg].html({{ item.project_title }}, {{ item.project_description }},'image') }}
 
 									
 									<div class="caption">
