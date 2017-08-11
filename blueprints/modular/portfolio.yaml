@@ -21,4 +21,7 @@ form:
                   .project_description:
                     type: textarea
                     label: Project Description
+                  .project_background:
+                    type: colorpicker
+                    label: Choose a color
              
