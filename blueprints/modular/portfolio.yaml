@@ -27,5 +27,3 @@ form:
                   .project_link:
                     type: text
                     label: "Details link"
-                    default: "#"
-             
