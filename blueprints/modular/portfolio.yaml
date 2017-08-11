@@ -24,4 +24,8 @@ form:
                   .project_background:
                     type: colorpicker
                     label: Choose a color
+                  .project_link:
+                    type: text
+                    label: "Details link"
+                    default: "#"
              
