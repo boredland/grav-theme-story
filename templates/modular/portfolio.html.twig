@@ -9,10 +9,11 @@
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
                                 {% for item in page.header.portfolio %}
 								<article>
-                                  
-                                        {{ page.media[item.projectimg].html({{ item.project_title }}, {{ item.project_description }},'image') }}
+								<div class="image">
+								<img src="{{ page.media[item.projectimg].url }}" alt="{{ item.project_title }}">
 
-									
+                            						
+								</div>
 									<div class="caption">
                                         <h3>{{ item.project_title }}</h3>
                                         <p>{{ item.project_description }}</p>
