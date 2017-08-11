@@ -6,7 +6,7 @@
         <h2>{{ page.title }}</h2>
         {{ page.content }}
         <ul class="actions vertical">
-            {% header.readmore.link %}
+            {% if header.readmore.link %}
             <li><a href="{{ header.readmore.link }}" class="button">{{ header.readmore.text }}</a></li>
             {% endif %}
         </ul>
