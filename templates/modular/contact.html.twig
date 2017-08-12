@@ -1,19 +1,16 @@
 <!-- Seven -->
-<section class="wrapper style1 align-center">
+<section class="wrapper style1 align-center contact-form">
     <div class="inner medium">
         <h2>{{ page.title }}</h2>
         {{ content }}
         {% include "forms/form.html.twig" %}
         <div id="form-result"></div>
-
         <script>
             $(document).ready(function () {
-
                 var form = $('#contact-form');
                 form.submit(function (e) {
                     // prevent form submission
                     e.preventDefault();
-
                     // submit the form via Ajax
                     $.ajax({
                         url: form.attr('action'),
