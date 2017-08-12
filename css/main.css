@@ -15,8 +15,8 @@
 
     ul.langswitcher {
         position: absolute;
-        top: 15%;
-        right: 10px;
+        top: 30px;
+        right: 30px;
     }
 
     .langswitcher a {
