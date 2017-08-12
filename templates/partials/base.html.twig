@@ -2,46 +2,50 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>{{site.title}}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		{% do assets.addCss('theme://css/main.css') %}
-		{% do assets.addCss('theme://css/custom.css') %}
-        {{ assets.css() }}
-	</head>
-	<body>
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    {% do assets.addCss('theme://css/main.css') %}
+    {% do assets.addCss('theme://css/custom.css') %}
+    {{ assets.css() }}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    {% do assets.addJs('theme://js/jquery.min.js', {'priority':120, 'group':'head'}) %}
+    {% do assets.addJs('theme://js/jquery.scrollex.min.js',  {'priority':119, 'group':'bottom'}) %}
+    {% do assets.addJs('theme://js/jquery.scrolly.min.js', {'priority':119, 'group':'bottom'}) %}
+    {% do assets.addJs('theme://js/skel.min.js', {'priority':119, 'group':'bottom'}) %}
+    {% do assets.addJs('theme://js/util.js', {'priority':119, 'group':'bottom'}) %}
+    {% do assets.addJs('theme://js/main.js', {'priority':119, 'group':'bottom'}) %}
+    {{ assets.js('head') }}
 
-                {% block content %}
-                {% endblock %}
+</head>
+<body>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								{% for icons in theme_config.footer.icon %}
-								
-								<li><a href="{{icons.link}}" class="icon style2 fa-{{icons.name}}"><span class="label">{{icons.title}}</span></a></li>
-								{% endfor %}
-								
-							</ul>
-							<p>{{ theme_config.footer.text }}</p>
-						</div>
-					</footer>
+<!-- Wrapper -->
+<div id="wrapper" class="divided">
 
-			</div>
+    {% block content %}
+    {% endblock %}
 
-		<!-- Scripts -->
-			{% do assets.addJs('theme://js/jquery.min.js', 120) %}
-			{% do assets.addJs('theme://js/jquery.scrollex.min.js', 119) %}
-			{% do assets.addJs('theme://js/jquery.scrolly.min.js', 118) %}
-			{% do assets.addJs('theme://js/skel.min.js', 117) %}
-			{% do assets.addJs('theme://js/util.js', 116) %}
-			{% do assets.addJs('theme://js/main.js', 115) %}
-            {{ assets.js() }}
+    <!-- Footer -->
+    <footer class="wrapper style1 align-center">
+        <div class="inner">
+            <ul class="icons">
+                {% for icons in theme_config.footer.icon %}
 
-	</body>
+                    <li><a href="{{ icons.link }}" class="icon style2 fa-{{ icons.name }}"><span
+                                    class="label">{{ icons.title }}</span></a></li>
+                {% endfor %}
+
+            </ul>
+            <p>{{ theme_config.footer.text }}</p>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+{{ assets.js('bottom') }}
+
+</body>
 </html>
