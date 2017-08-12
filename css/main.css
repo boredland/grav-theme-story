@@ -13,10 +13,10 @@
         padding-right: 20px;
     }
 
-    .banner .langswitcher ul {
-        top: 16%;
-        right: 2%;
+    ul.langswitcher {
         position: absolute;
+        top: 15%;
+        right: 10px;
     }
 
 
