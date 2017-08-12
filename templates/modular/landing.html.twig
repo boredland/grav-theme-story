@@ -1,14 +1,15 @@
-
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-                            <h1>{{ page.title }}</h1>
-                            {{ page.content }}
-							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
-							</ul>
-						</div>
-						<div class="image">
-                            {{ page.media[header.spotlight_img] }}
-						</div>
-					</section>
+<!-- One -->
+<section
+        class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+    <div class="content">
+        <h1>{{ page.title }}</h1>
+        {{ page.content }}
+        <ul class="actions vertical">
+            <li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        {% include 'partials/langswitcher_footer.html.twig' %}
+        {{ page.media[header.spotlight_img] }}
+    </div>
+</section>
