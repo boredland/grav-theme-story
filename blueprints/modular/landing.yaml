@@ -11,6 +11,9 @@ form:
                 type: text
                 label: Readmore-Text
                 default: "Read more"
+              header.subtitle:
+                type: text
+                label: Slogan below the Logo
               header.logo_img:
                 type: filepicker
                 preview_images: true
