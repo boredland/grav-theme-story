@@ -19,6 +19,10 @@
         right: 10px;
     }
 
+    .langswitcher a {
+        text-decoration: none;
+    }
+
 
 /* Reset */
 
