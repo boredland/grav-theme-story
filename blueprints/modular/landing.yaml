@@ -11,8 +11,12 @@ form:
                 type: text
                 label: Readmore-Text
                 default: "Read more"
-              header.banner_img:
+              header.logo_img:
                 type: filepicker
                 preview_images: true
-                label: Spotlight Image
+                label: Logo
+              header.background_img:
+                type: filepicker
+                preview_images: true
+                label: Background Image
              
