@@ -31,3 +31,13 @@ form:
         .title:
           type: text
           label: icon title
+    footer.menu:
+      type: list
+      label: "Menu items to include into the footer"
+      fields:
+        .title:
+          type: text
+          label: Link-text
+        .link:
+          type: text
+          label: Link-address
