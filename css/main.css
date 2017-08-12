@@ -23,6 +23,10 @@
         text-decoration: none;
     }
 
+    .banner.style1 .image .content {
+        color: #fff;
+    }
+
 
 /* Reset */
 
