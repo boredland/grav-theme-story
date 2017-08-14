@@ -1,0 +1,23 @@
+title: Icons
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+              header.clients:
+                type: list
+                label: Clients
+                fields:
+                  .logo:
+                    type: filepicker
+                    label: The clients logo
+                    preview_images: true
+                  .name:
+                    type: text
+                    label: Name of the client
+                  .background:
+                    type: colorpicker
+                    label: Choose a color

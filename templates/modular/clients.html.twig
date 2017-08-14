@@ -1,0 +1,23 @@
+<!-- Clients -->
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h2>Ipsum sed consequat</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel
+            massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium
+            massa et, hendrerit vestibulum odio lorem ipsum.</p>
+        <div class="items style1 medium onscroll-fade-in clients">
+            {% for client in page.header.clients %}
+                <section class="client">
+                    <div class="image" style="background-color: {{ client.background }};">
+                        <img src="{{ page.media[client.logo].url }}" alt="{{ client.name }}">
+                    </div>
+                    <div class="caption">
+                        <h3>{{ client.name }}</h3>
+                    </div>
+                </section>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
