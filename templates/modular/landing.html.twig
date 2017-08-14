@@ -8,7 +8,7 @@
             <li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
         </ul>
     </div>
-    <div class="image" style="background-image: {{ header.background_img }}" >
+    <div class="image" style="background-image: {{ page.media[header.background_img].url }}" >
         {% include 'partials/langswitcher.html.twig' %}
         {{ page.media[header.logo_img] }}
         <div class="content">{{ header.subtitle }}</div>
