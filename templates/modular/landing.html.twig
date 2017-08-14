@@ -10,7 +10,10 @@
     </div>
     <div class="image" style="background-image: url({{ page.media[header.background_img].url }})" >
         {% include 'partials/langswitcher.html.twig' %}
-        {{ page.media[header.logo_img] }}
-        <div class="content">{{ header.subtitle }}</div>
+        <div class="logo">
+            {{ page.media[header.logo_img] }}
+            <div class="content">{{ header.subtitle }}</div>
+        </div>
+
     </div>
 </section>
