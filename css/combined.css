@@ -8264,7 +8264,8 @@ body.is-loading .items.onload-fade-in > * > .inner {
 
 @media screen and (orientation: portrait) {
     .banner.style1 .logo .content {
-        font-size: 2.55vw
+        font-size: 2.55vw;
+        min-height: unset;
     }
 }
 
