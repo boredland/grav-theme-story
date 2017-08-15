@@ -8262,10 +8262,6 @@ body.is-loading .items.onload-fade-in > * > .inner {
     min-height: unset
 }
 
-.spotlight.style1 .content {
-    padding: 2.5rem 3rem;
-}
-
 .spotlight p {
     margin: 0
 }
