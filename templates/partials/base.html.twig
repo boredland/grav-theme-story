@@ -16,7 +16,7 @@
 
     {{ assets.css('head') }}
 
-    {% do assets.addJs('theme://js/jquery.min.js', {'priority':120, 'group':'head'}) %}
+    {% do assets.addJs('theme://js/jquery.min.js', {'priority':120, 'group':'bottom'}) %}
     {% do assets.addJs('theme://js/jquery.scrollex.min.js',  {'priority':119, 'group':'bottom'}) %}
     {% do assets.addJs('theme://js/jquery.scrolly.min.js', {'priority':119, 'group':'bottom'}) %}
     {% do assets.addJs('theme://js/skel.min.js', {'priority':119, 'group':'bottom'}) %}
