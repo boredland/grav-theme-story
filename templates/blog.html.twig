@@ -3,14 +3,14 @@
     {% set collection = page.collection() %}
 
     {% block content %}
-        <div class="blog">
             <div class="blog-header">
                 <h2>{{ page.title }}</h2>
                 {{ page.content }}
             </div>
-            <!-- Items start here -->
-            {% for child in collection %}
-                {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-            {% endfor %}
-        </div>
+            <div class="wrapper blog">
+                <!-- Items start here -->
+                {% for child in collection %}
+                    {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
+                {% endfor %}
+            </div>
     {% endblock %}
