@@ -3,7 +3,11 @@
 	{% set collection = page.collection() %}
 
 	{% block content %}
-		<header class="header" style="height:410px;width:100%;background-image: url({{ page.media[header.logo_img].url }}");>
+		<header class="header" style="
+				height:410px;
+				width:100%;
+				background: {{ header.background_color }} url({{ page.media[header.banner_img].url }}) left no-repeat;
+				">
             {{ page.media[header.logo_img] }}
 		</header>
 		{{ page.content }}
