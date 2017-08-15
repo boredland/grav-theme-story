@@ -12,6 +12,6 @@
         </ul>
     </div>
     <div class="image {{ page.slug }}" style="background-color: {{ header.spotlight_img_background }}">
-        {{ page.media[header.spotlight_img] }}
+        <img src="{{ page.media[header.spotlight_img].url }}" style="object-fit: {{ header.spotlight_fit }}">
     </div>
 </section>
