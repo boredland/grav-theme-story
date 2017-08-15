@@ -5,9 +5,9 @@
     {% block content %}
             <div class="blog-header">
                 <h2>{{ page.title }}</h2>
-                {{ page.content }}
             </div>
             <div class="wrapper blog">
+                {{ page.content }}
                 <!-- Items start here -->
                 {% for child in collection %}
                     {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
