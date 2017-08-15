@@ -7,16 +7,17 @@ form:
       fields:
         content:
           fields:
-            .logo_img:
+            header.logo_img:
               type: filepicker
               label: Logo image
               preview_images: true
-            .background_img:
+            header.background_img:
               type: filepicker
               label: Banner image
-            .slug:
+              preview_images: true
+            header.slug:
               type: text
-              label: Name of the client
-            .background_color:
+              label: Slogan below logo
+            header.background_color:
               type: colorpicker
               label: Choose a color
