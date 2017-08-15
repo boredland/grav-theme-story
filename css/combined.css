@@ -6626,7 +6626,7 @@ body.is-loading .gallery.onload-fade-in article .image img {
 }
 
 .gallery.style2 article .image:hover {
-    opacity: 0.1;
+    opacity: 0.15;
 }
 
 .gallery.style2 article .image img {
