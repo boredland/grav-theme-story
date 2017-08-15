@@ -3343,3 +3343,30 @@ body.is-loading .items.onload-fade-in > * > .inner {
 #grav-login .button {
     vertical-align: middle;
 }
+
+.langswitcher {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    margin-left: 1rem !important;
+}
+
+.langswitcher li {
+    display: inline-block;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+}
+
+.langswitcher .active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.form-field.has-errors .form-input-wrapper input, .form-field.has-errors .form-input-wrapper select, .form-field.has-errors .form-input-wrapper textarea {
+    border: 1px solid rgb(217, 83, 79);
+}
+
+#grav-login .button {
+    vertical-align: middle;
+}
