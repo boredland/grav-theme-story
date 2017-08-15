@@ -1,4 +1,4 @@
-{% extends 'with_header.html.twig' %}
+{% extends 'base.html.twig' %}
     {% block content %}
         <header class="header" style="
                     height:400px;
@@ -16,8 +16,5 @@
                 {{ header.slogan }}
             </div>
         </header>
-        <h2>{{ page.title }}</h2>
-        <div class="single">
-            {{ page.content }}
-        </div>
+        <h2>{{ page.title }}</h2>s
     {% endblock %}
