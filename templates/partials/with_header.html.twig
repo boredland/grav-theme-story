@@ -1,4 +1,4 @@
-{% extends 'partials/base.html.twig' %}
+{% embed 'partials/base.html.twig' %}
     {% block content %}
         <header class="header" style="
                     height:400px;
@@ -17,4 +17,6 @@
             </div>
         </header>
         <h2>{{ page.title }}</h2>
+        {{ page.content }}
     {% endblock %}
+{% endembed %}
