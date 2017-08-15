@@ -1,3 +1,16 @@
+.blog-header h2 {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-left: 10%;
+}
+
+.wrapper.blog {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+}
+
 ul.langswitcher {
     position: absolute;
     top: 30px;
