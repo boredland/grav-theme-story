@@ -3,21 +3,11 @@
     {% set collection = page.collection() %}
 
     {% block content %}
-        {% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
-
-        {% if blog_image %}
-            <div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
-        {% else %}
-            <div class="blog-header">
-        {% endif %}
-        {{ page.content }}
+        <div class="blog-header">
+            <h2>{{ page.title }}</h2>
+            {{ page.content }}
         </div>
-
-        <div class="content-wrapper blog-content-list grid pure-g">
-            <div id="listing" class="block pure-u-2-3 h-feed">
-                {% for child in collection %}
-                    {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-                {% endfor %}
-            </div>
-        </div>
+        {% for child in collection %}
+            {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
+        {% endfor %}
     {% endblock %}
