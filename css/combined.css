@@ -8274,10 +8274,6 @@ body.is-loading .items.onload-fade-in > * > .inner {
     background-color: transparent
 }
 
-.spotlight.orient-right .image img {
-    object-position: left
-}
-
 .spotlight.orient-left .image img {
     object-position: right
 }
