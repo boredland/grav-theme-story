@@ -10,7 +10,9 @@
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}"/>
     <link rel="canonical" href="{{ page.url(true, true) }}"/>
 
-    {% do assets.addCss('theme://css/critical.css',{'priority':100, 'group':'head'}) %}
+    {% do assets.addCss('theme://css/main.css',{'priority':101, 'group':'head'}) %}
+    {% do assets.addCss('theme://css/custom.css',{'priority':100, 'group':'head'}) %}
+
     {{ assets.css('head') }}
 
     {% do assets.addJs('theme://js/jquery.min.js', {'priority':100, 'group':'head'}) %}
@@ -56,14 +58,4 @@
 
 {{ assets.js('bottom') }}
 
-<script>var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = '{{ url('theme://css/org_app.css') }}';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);</script>
-</body>
 </html>
