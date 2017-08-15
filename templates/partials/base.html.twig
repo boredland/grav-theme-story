@@ -11,8 +11,8 @@
     <link rel="canonical" href="{{ page.url(true, true) }}"/>
 
 
-    {% do assets.addCss('theme://css/main.css',{'priority':100, 'group':'head'}) %}
-    {% do assets.addCss('theme://css/custom.css',{'priority':101, 'group':'head'}) %}
+    {% do assets.addCss('theme://css/main.css',{'priority':101, 'group':'head'}) %}
+    {% do assets.addCss('theme://css/custom.css',{'priority':100, 'group':'head'}) %}
 
     {{ assets.css('head') }}
 
