@@ -8262,13 +8262,6 @@ body.is-loading .items.onload-fade-in > * > .inner {
     min-height: unset
 }
 
-@media screen and (orientation: portrait) {
-    .banner.style1 .logo .content {
-        font-size: 2.55vw;
-        min-height: unset;
-    }
-}
-
 .spotlight.style1 .content {
     padding: 3.5rem 5rem
 }

@@ -568,6 +568,7 @@ ul.actions.vertical li > * {
 @media screen and (orientation: portrait) {
     .banner.style1 .logo .content {
         font-size: 2.55vw;
+        min-height: unset;
     }
 }
 
