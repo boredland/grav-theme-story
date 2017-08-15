@@ -13,7 +13,10 @@
 
     {% do assets.addCss('theme://css/main.css') %}
     {% do assets.addCss('theme://css/custom.css') %}
-    {{ assets.css() }}
+    {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',{'priority':121, 'group':'head'}) %}
+    {% do assets.addCss('https://fonts.googleapis.com/css?family=Open+Sans',{'priority':120, 'group':'head'}) %}
+
+    {{ assets.css('head') }}
 
     {% do assets.addJs('theme://js/jquery.min.js', {'priority':120, 'group':'head'}) %}
     {% do assets.addJs('theme://js/jquery.scrollex.min.js',  {'priority':119, 'group':'bottom'}) %}
