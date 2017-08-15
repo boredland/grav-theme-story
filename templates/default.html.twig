@@ -1,0 +1,23 @@
+{% embed 'partials/base.html.twig' %}
+    <header class="header" style="
+            height:400px;
+            width:100%;
+            background: {{ header.background_color }} url({{ page.media[header.banner_img].url }}) center no-repeat;
+            ">
+        <img src="{{ page.media[header.logo_img].url }}" style="
+                margin: 2% 2% -0.5% 2%;
+                width: 25%;
+            ">
+        <div class="slogan" style="
+                margin-left: 9.4%;
+                font-size: 0.79vw;
+            ">
+            {{ header.slogan }}
+        </div>
+    </header>
+    <h2>{{ page.title }}</h2>
+    <div class="single">
+        {% block content %}
+        {% endblock %}
+    </div>
+{% endembed %}
