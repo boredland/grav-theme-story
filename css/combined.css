@@ -3512,6 +3512,10 @@ body.is-loading .banner.onload-image-fade-in .image img {
     .spotlight.style1 ul {
         text-align: left;
     }
+
+    .spotlight.style1 p {
+        text-align: left;
+    }
 }
 
 .banner.style1.fullscreen {
