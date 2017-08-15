@@ -16,7 +16,7 @@ form:
                 label: "Link for Readmore"
               header.orient:
                 type: toggle
-                label: Orientation
+                label: Text-Orientation
                 default: left
                 options:
                   left: 'left'
@@ -25,4 +25,7 @@ form:
                 type: filepicker
                 preview_images: true
                 label: Banner Image
+              header.spotlight_img_background:
+                type: colorpicker
+                label: Background for the Banner
              
