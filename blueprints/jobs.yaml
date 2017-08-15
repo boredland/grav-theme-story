@@ -11,7 +11,7 @@ form:
               type: filepicker
               label: Logo image
               preview_images: true
-            header.background_img:
+            header.banner_img:
               type: filepicker
               label: Banner image
               preview_images: true
