@@ -3508,6 +3508,10 @@ body.is-loading .banner.onload-image-fade-in .image img {
         max-width: 100%;
         height: 45vh
     }
+
+    .spotlight.style1 ul {
+        text-align: left;
+    }
 }
 
 .banner.style1.fullscreen {
