@@ -6625,6 +6625,10 @@ body.is-loading .gallery.onload-fade-in article .image img {
     border-radius: 0
 }
 
+.gallery.style2 article .image:hover {
+    opacity: 0.1;
+}
+
 .gallery.style2 article .image img {
     display: block;
     width: 100%;

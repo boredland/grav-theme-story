@@ -578,6 +578,7 @@ ul.actions.vertical li > * {
 
 .spotlight p {
     margin: 0px;
+    text-align: left;
 }
 
 .spotlight .image {
