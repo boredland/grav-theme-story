@@ -1,4 +1,4 @@
-<div class="list-item h-entry" style="background-color: #F5F5F5;padding: 40px;">
+<div class="list-item h-entry">
 
     {% set header_image = page.header.header_image|defined(true) %}
     {% set header_image_width  = page.header.header_image_width|defined(900) %}
@@ -9,8 +9,8 @@
         <h3 class="p-name" style="margin-bottom: 0px"><a href="{{ page.url }}" class="u-url" style="text-decoration: underline;">{{ page.title }}</a></h3>
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
-                <span>{{ 'BLOG.ITEM.PUBLISHED_ON'|t }} </span>
-                <em>{{ strftime(page.date) }}</em>
+                <span>{{ page.date|date("d") }}</span>
+                <em>{{ page.date|date("M") }}</em>
             </time>
         </span>
         {% if page.taxonomy.tag %}
