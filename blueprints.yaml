@@ -20,11 +20,14 @@ form:
       label: Upload Logos
       destination: 'theme@:/assets'
       multiple: true
-    accept:
-      - image/*
+      accept:
+        - image/*
     logo_img:
       type: filepicker
       label: Logo to display on different pages
+      folder: 'theme@:/assets'
+      accept:
+        - image/*
     footer.text:
       type: text
       label: Footer Text
