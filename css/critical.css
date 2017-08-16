@@ -387,17 +387,11 @@ ul.actions.vertical li > * {
     .banner.style1 .content {
         padding: 5rem 5rem 3rem;
     }
-    .banner.style1 .logo {
-        padding-top: 16rem !important;
-    }
 }
 
 @media screen and (max-width: 1280px) {
     .banner.style1 .content {
         padding: 4rem 4rem 2rem;
-    }
-    .banner.style1 .logo {
-        padding-top: 19rem !important;
     }
 }
 
@@ -421,10 +415,6 @@ ul.actions.vertical li > * {
 
     .banner.style1 .logo {
         padding-top: 8rem !important;
-    }
-
-    .banner.style1 .logo .content {
-
     }
 
     .banner.style1 .content {
@@ -590,8 +580,9 @@ ul.actions.vertical li > * {
     height: auto;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 11rem;
+    margin-top: 50%;
     position: relative;
+    margin-bottom: auto;
 }
 
 .banner.style1 .logo img {
