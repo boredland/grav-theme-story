@@ -10,7 +10,7 @@
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
                 <span>{{ 'BLOG.ITEM.PUBLISHED_ON'|t }} </span>
-                <em>{{ "%b"|strftime(page.date) }}</em>
+                <em>{{ page.date }}</em>
             </time>
         </span>
         {% if page.taxonomy.tag %}
