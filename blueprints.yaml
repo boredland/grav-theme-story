@@ -26,8 +26,6 @@ form:
       type: filepicker
       label: Logo to display on different pages
       folder: 'theme@:/assets'
-      accept:
-        - image/*
     footer.text:
       type: text
       label: Footer Text
