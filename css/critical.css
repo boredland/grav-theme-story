@@ -1,7 +1,10 @@
 .blog-header h2 {
-    width: 100%;
     background-color: #ddd;
-    padding-left: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+    text-align: center;
 }
 
 .wrapper.blog {
@@ -11,7 +14,7 @@
     margin-top: 4%;
     box-shadow: none !important;
     background: #ddd;
-    padding: 2% 2%;
+    padding: 2%;
 }
 
 ul.langswitcher {
