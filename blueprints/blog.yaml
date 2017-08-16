@@ -7,10 +7,6 @@ form:
       fields:
         content:
           fields:
-            header.logo_img:
-              type: filepicker
-              label: Logo image
-              preview_images: true
             header.banner_img:
               type: filepicker
               label: Banner image
