@@ -1,5 +1,8 @@
 {% embed 'partials/with_header.html.twig' %}
     {% block content %}
+        <div class="blog-header">
+            <h2>{{ page.title }}</h2>
+        </div>
         {{ page.content }}
     {% endblock %}
 {% endembed %}
