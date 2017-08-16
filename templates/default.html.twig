@@ -19,15 +19,17 @@
             <h2>{{ page.title }}</h2>
         </div>
         <div class="wrapper blog">
-            {{ page.content }}
-            {{ 'BLOG.ITEM.LAST_UPDATE'|t }}:
-            <span class="list-blog-date">
-            <time class="dt-published" datetime="{{ page.date|date("c") }}">
-                <span>{{ page.date|date("d") }}</span>
-                <em>{{ page.date|date("M") }} </em>
-                <span>{{ page.date|date("Y") }}</span>
-            </time>
-        </span>
+            <div class="list-item h-entry" style="background-color: #F5F5F5;padding: 50px;">
+                {{ page.content }}
+                {{ 'BLOG.ITEM.LAST_UPDATE'|t }}:
+                <span class="list-blog-date">
+                    <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                        <span>{{ page.date|date("d") }}</span>
+                        <em>{{ page.date|date("M") }} </em>
+                        <span>{{ page.date|date("Y") }}</span>
+                    </time>
+                </span>
+            </div>
         </div>
     {% endblock %}
 
