@@ -388,7 +388,7 @@ ul.actions.vertical li > * {
         padding: 5rem 5rem 3rem;
     }
     .banner.style1 .logo {
-        padding-top: 16rem;
+        padding-top: 16rem !important;
     }
 }
 
@@ -397,7 +397,7 @@ ul.actions.vertical li > * {
         padding: 4rem 4rem 2rem;
     }
     .banner.style1 .logo {
-        padding-top: 19rem;
+        padding-top: 19rem !important;
     }
 }
 
@@ -419,7 +419,7 @@ ul.actions.vertical li > * {
         text-align: center;
     }
     .banner.style1 .logo {
-        padding-top: 8rem;
+        padding-top: 8rem !important;
     }
     .banner.style1 .content {
         display: -webkit-flex;
@@ -584,7 +584,7 @@ ul.actions.vertical li > * {
     height: auto;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 10rem;
+    padding-top: 11rem;
     position: relative;
 }
 
