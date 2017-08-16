@@ -26,6 +26,9 @@ form:
       type: filepicker
       label: Logo to display on different pages
       folder: 'theme@:/images'
+    slogan:
+      type: text
+      label: Slogan as Logo-Underline
     footer.text:
       type: text
       label: Footer Text
