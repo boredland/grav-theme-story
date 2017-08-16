@@ -56,8 +56,9 @@
 </div>
 
 <!-- Scripts -->
-
-{{ assets.js('bottom') }}
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
 
 <script>var cb = function () {
         var l = document.createElement('link');
