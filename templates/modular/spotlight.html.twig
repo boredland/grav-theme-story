@@ -13,16 +13,18 @@
     </div>
     <div class="image {{ page.slug }}" style="background-color: {{ header.spotlight_img_background }};overflow:hidden;">
         <img src="{{ page.media[header.spotlight_img].url }}" style="
-        position: absolute;
-        margin: auto;
         {% if header.spotlight_fit == 'cover' %}
+                position: absolute;
+                margin: auto;
                 top: -9999px;
                 right: -9999px;
                 bottom: -9999px;
                 left: -9999px;
                 width: auto;
                 {% elseif header.spotlight_fit == 'contain' %}
-                width:95%;
+                        position: relative;
+                        margin: auto;
+                        width: 95%;
         {% endif %}
                 ">
     </div>
