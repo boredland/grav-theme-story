@@ -393,6 +393,10 @@ ul.actions.vertical li > * {
     .banner.style1 .content {
         padding: 4rem 4rem 2rem;
     }
+
+    .banner.style1 .logo .content {
+        font-size: 1.23vw;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -516,6 +520,7 @@ ul.actions.vertical li > * {
         width: 50%;
         min-width: 0px;
     }
+
 }
 
 @media screen and (max-width: 736px) {
