@@ -561,7 +561,7 @@ ul.actions.vertical li > * {
 
 .banner.style1 .logo {
     height: auto;
-    top: 25%;
+    top: 0;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 8rem;
