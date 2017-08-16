@@ -9,9 +9,9 @@
             <li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
         </ul>
     </div>
-
+    {{ page.media[header.background_img] }}
     <div class="image" style="
-            background-image: url(http://bla.de/{{ page.media[header.background_img].url }});
+            background-image: url({{ page.media[header.background_img].url }});
             background-repeat: no-repeat;
             width: 50%;
             height: auto;
