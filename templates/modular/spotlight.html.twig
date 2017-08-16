@@ -11,7 +11,13 @@
             {% endif %}
         </ul>
     </div>
-    <div class="image {{ page.slug }}" style="background-color: {{ header.spotlight_img_background }}">
-        <img src="{{ page.media[header.spotlight_img].url }}" style="object-fit: {{ header.spotlight_fit }}">
+    <div class="image {{ page.slug }}" style="background-color: {{ header.spotlight_img_background }};overflow:hidden;">
+        <img src="{{ page.media[header.spotlight_img].url }}" style="
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        margin: auto;">
     </div>
 </section>
