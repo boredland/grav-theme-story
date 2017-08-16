@@ -15,6 +15,13 @@ license: MIT
 form:
   validation: loose
   fields:
+    file_upload:
+      type: file
+      label: Upload Logos
+      destination: 'theme@:/assets'
+      multiple: true
+    accept:
+      - image/*
     logo_img:
       type: filepicker
       label: Logo to display on different pages
