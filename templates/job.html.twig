@@ -21,7 +21,28 @@
         <div class="wrapper blog">
             <div class="list-item h-entry" style="background-color: #F5F5F5;padding: 50px;">
                 {{ page.content }}
-                {% include "forms/form.html.twig" with { form: forms('application-form') } %}
+                {% include "forms/form.html.twig" with {
+                form:
+                    name: contact
+                    fields:
+                        -
+                            name: name
+                            label: Name
+                            placeholder: 'Enter your name'
+                            autofocus: 'on'
+                            autocomplete: 'on'
+                            type: text
+                            default: test
+
+                    buttons:
+                        -
+                            type: submit
+                            value: Submit
+
+                    process:
+                        -
+                            message: 'Thank you for your feedback!'
+                } %}
                 {{ 'BLOG.ITEM.LAST_UPDATE'|t }}:
                 <span class="list-blog-date">
                     <time class="dt-published" datetime="{{ page.date|date("c") }}">
