@@ -18,6 +18,7 @@
         right: -9999px;
         bottom: -9999px;
         left: -9999px;
-        margin: auto;">
+        margin: auto;
+        {% if header.spotlight_fit == 'cover' %}width: auto;{% elseif header.spotlight_fit == 'contain' %}width:95%;{% endif %}">
     </div>
 </section>

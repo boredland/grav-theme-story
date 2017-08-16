@@ -28,5 +28,12 @@ form:
               header.spotlight_img_background:
                 type: colorpicker
                 label: Background for the Banner
+              header.spotlight_fit:
+                type: toggle
+                label: Fit-style for the image
+                default: contain
+                options:
+                  contain: 'contain'
+                  cover: 'cover'
 
              
