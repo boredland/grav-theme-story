@@ -4,6 +4,7 @@
     {% set header_image_width  = page.header.header_image_width|defined(900) %}
     {% set header_image_height = page.header.header_image_height|defined(300) %}
     {% set header_image_file = page.header.header_image_file %}
+    {{ dump(page.header) }}
 
     <div class="list-blog-header" style="margin-bottom: 40px;">
         <h3 class="p-name" style="margin-bottom: 0px"><a href="{{ page.url }}" class="u-url" style="text-decoration: underline;">{{ page.title }}</a></h3>
