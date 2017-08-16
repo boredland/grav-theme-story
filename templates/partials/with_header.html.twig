@@ -7,7 +7,7 @@
                     background: {{ header.background_color }} url({{ page.media[header.banner_img].url }}) center no-repeat;
                     background-size: contain;
                     ">
-            <img src="{{ theme_config.logo_img }}" style="
+            <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}" style="
                 margin: 2% 2% -0.5% 2%;
                 width: 25%;
             ">
