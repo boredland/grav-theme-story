@@ -387,11 +387,17 @@ ul.actions.vertical li > * {
     .banner.style1 .content {
         padding: 5rem 5rem 3rem;
     }
+    .banner.style1 .logo {
+        padding-top: 16rem;
+    }
 }
 
 @media screen and (max-width: 1280px) {
     .banner.style1 .content {
         padding: 4rem 4rem 2rem;
+    }
+    .banner.style1 .logo {
+        padding-top: 19rem;
     }
 }
 
@@ -412,7 +418,9 @@ ul.actions.vertical li > * {
         -webkit-flex-direction: column-reverse;
         text-align: center;
     }
-
+    .banner.style1 .logo {
+        padding-top: 8rem;
+    }
     .banner.style1 .content {
         display: -webkit-flex;
         -webkit-flex-direction: column;
