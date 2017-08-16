@@ -8249,16 +8249,6 @@ body.is-loading .items.onload-fade-in > * > .inner {
     background-size: cover
 }
 
-.banner.style1 .logo {
-    height: auto;
-    top: 25%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 8rem;
-    align-self: center;
-    position: relative
-}
-
 .banner.style1 .logo img {
     position: relative
 }
