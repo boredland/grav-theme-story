@@ -18,7 +18,7 @@ form:
     file_upload:
       type: file
       label: Upload Logos
-      folder: 'theme@:/images'
+      destination: 'theme@:/images'
       multiple: true
       accept:
         - image/*
