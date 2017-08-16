@@ -9,7 +9,8 @@
             <li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
         </ul>
     </div>
-    <div class="image" style="background-image: url('{{ page.media[header.background_img].url }}')" >
+    {% set background_image = page.media[header.background_img].url %}
+    <div class="image" style="background-image: url({{ background_image }})" >
         <p>
             {{ page.media[header.background_img].url }}
         </p>
