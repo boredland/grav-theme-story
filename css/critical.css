@@ -1,6 +1,6 @@
 .blog-header h2 {
     width: 100%;
-    background-color: #F5F5F5;
+    background-color: #ddd;
     padding-left: 10%;
 }
 
@@ -10,6 +10,8 @@
     margin-right: auto;
     margin-top: 4%;
     box-shadow: none !important;
+    background: #ddd;
+    padding: 2% 2%;
 }
 
 ul.langswitcher {
@@ -20,6 +22,10 @@ ul.langswitcher {
 
 .langswitcher a {
     text-decoration: none;
+}
+
+.blog p {
+    margin-bottom: 0.75rem;
 }
 
 html,
