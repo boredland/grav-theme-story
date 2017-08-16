@@ -15,6 +15,9 @@ license: MIT
 form:
   validation: loose
   fields:
+    logo_img:
+      type: filepicker
+      label: Logo to display on different pages
     footer.text:
       type: text
       label: Footer Text
