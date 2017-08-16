@@ -2,22 +2,23 @@
     {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
     {% block header %}
         <header class="header" style="
-                    height:400px;
-                    width:100%;
-                    background: {{ header.background_color }} url({{ page.media[header.banner_img].url }}) center no-repeat;
-                    background-size: contain;
-                    ">
+                height:400px;
+                width:100%;
+                background: {{ header.background_color }} url({{ page.media[header.banner_img].url }}) center no-repeat;
+                background-size: contain;
+                ">
             <a href="/">
                 <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}" style="
                 margin: 2% 2% -0.5% 2%;
                 width: 25%;
             ">
-                <div class="slogan" style="
+            </a>
+            <div class="slogan" style="
                 margin-left: 9.4%;
                 font-size: 0.79vw;
             ">
-                    {{ theme_config.slogan }}
-                </div>
-            </a>
+                {{ theme_config.slogan }}
+            </div>
+
         </header>
     {% endblock %}
