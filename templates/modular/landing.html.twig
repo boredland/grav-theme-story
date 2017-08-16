@@ -10,6 +10,9 @@
         </ul>
     </div>
     <div class="image" style="background-image: url({{ page.media[header.background_img].url }})" >
+        <p>
+            {{ page.media[header.background_img].url }}
+        </p>
         {% include 'partials/langswitcher.html.twig' %}
         <div class="logo">
             <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}">
