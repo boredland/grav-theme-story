@@ -1,6 +1,6 @@
 {% embed 'partials/base.html.twig' %}
     {% block header %}
-        <header class="header" style="background: #98DBF7;padding-left: 8vw;padding-bottom: 2%;">
+        <header class="header" style="background: #5da5c1;padding-left: 8vw;padding-bottom: 2%;">
             <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}" style="
                 margin: 2% 2% -0.5vw 2%;
                 height: auto;
@@ -17,6 +17,13 @@
     {% block content %}
         <div class="blog-header">
             <h2>{{ page.title }}</h2>
+            <span class="list-blog-date">
+                <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                    <span>{{ page.date|date("d") }}</span>
+                    <em>{{ page.date|date("M") }}</em>
+                    <span>{{ page.date|date("YYYY") }}</span>
+                </time>
+            </span>
         </div>
         <div class="wrapper blog">
             {{ page.content }}
