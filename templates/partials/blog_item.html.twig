@@ -11,8 +11,8 @@
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
                 <span>{{ page.date|date("d") }}</span>
-                <em>{{ page.date|date("M") }}</em>
-                <span>{{ page.date|date("YYYY") }}</span>
+                <em>{{ page.date|date("M") }} </em>
+                <span>{{ page.date|date("Y") }}</span>
             </time>
         </span>
         {% if page.taxonomy.tag %}

@@ -5,7 +5,7 @@ en:
       CONTINUE_READING: Continue reading...
       NEXT_POST: Next Post
       PREV_POST: Previous Post
-      PUBLISHED_ON: Published on
+      LAST_UPDATE: Last update on
   SIDEBAR:
     SIMPLE_SEARCH:
       HEADLINE: Search
@@ -33,7 +33,8 @@ de:
       CONTINUE_READING: Weiterlesen...
       NEXT_POST: Nächster Beitrag
       PREV_POST: Vorheriger Beitrag
-      PUBLISHED_ON: Veröffentlicht am
+      LAST_UPDATE: Aktualisiert am
+
   SIDEBAR:
     SIMPLE_SEARCH:
       HEADLINE: SimpleSearch

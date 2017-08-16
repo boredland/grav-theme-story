@@ -17,16 +17,17 @@
     {% block content %}
         <div class="blog-header">
             <h2>{{ page.title }}</h2>
-            <span class="list-blog-date">
-                <time class="dt-published" datetime="{{ page.date|date("c") }}">
-                    <span>{{ page.date|date("d") }}</span>
-                    <em>{{ page.date|date("M") }}</em>
-                    <span>{{ page.date|date("YYYY") }}</span>
-                </time>
-            </span>
         </div>
         <div class="wrapper blog">
             {{ page.content }}
+            {{ 'BLOG.ITEM.LAST_UPDATE'|t }}:
+            <span class="list-blog-date">
+            <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                <span>{{ page.date|date("d") }}</span>
+                <em>{{ page.date|date("M") }} </em>
+                <span>{{ page.date|date("Y") }}</span>
+            </time>
+        </span>
         </div>
     {% endblock %}
 
