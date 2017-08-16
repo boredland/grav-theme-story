@@ -11,7 +11,7 @@
                 {{ page.content }}
                 <!-- Items start here -->
                 {% for child in collection %}
-                    {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true, 'test': "bla"} %}
+                    {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true, 'banner_img': header.banner_img} %}
                 {% endfor %}
             </div>
     {% endblock %}
