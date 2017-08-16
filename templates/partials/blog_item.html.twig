@@ -1,11 +1,11 @@
-<div class="list-item h-entry">
+<div class="list-item h-entry" style="background-color: #F5F5F5;padding: 50px;">
 
     {% set header_image = page.header.header_image|defined(true) %}
     {% set header_image_width  = page.header.header_image_width|defined(900) %}
     {% set header_image_height = page.header.header_image_height|defined(300) %}
     {% set header_image_file = page.header.header_image_file %}
 
-    <div class="list-blog-header">
+    <div class="list-blog-header" style="margin-bottom: 40px;">
         <h3 class="p-name" style="margin-bottom: 0px"><a href="{{ page.url }}" class="u-url" style="text-decoration: underline;">{{ page.title }}</a></h3>
         <span class="list-blog-date">
             <time class="dt-published" datetime="{{ page.date|date("c") }}">
