@@ -529,7 +529,8 @@ ul.actions.vertical li > * {
     }
 
     .spotlight.style1 .image {
-        width: 100%
+        width: 100vw !important;
+        height: 100vw !important;
     }
 
     .spotlight.style1 .image img {
