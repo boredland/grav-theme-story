@@ -16,14 +16,13 @@
             overflow:hidden;
             width: 35vw;
             height: 35vw;
+            margin: auto;
             ">
         <img src="{{ page.media[header.spotlight_img].url }}" style="
         {% if header.spotlight_fit == 'cover' %}
                 position: absolute;
                 margin: auto;
-                top: -9999px;
                 right: -9999px;
-                bottom: -9999px;
                 left: -9999px;
                 width: auto;
                 {% elseif header.spotlight_fit == 'contain' %}
