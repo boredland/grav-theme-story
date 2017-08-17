@@ -11,7 +11,12 @@
             {% endif %}
         </ul>
     </div>
-    <div class="image {{ page.slug }}" style="background-color: {{ header.spotlight_img_background }};overflow:hidden;">
+    <div class="image {{ page.slug }}" style="
+            background-color: {{ header.spotlight_img_background }};
+            overflow:hidden;
+            width: 35vw;
+            height: 35vw;
+            ">
         <img src="{{ page.media[header.spotlight_img].url }}" style="
         {% if header.spotlight_fit == 'cover' %}
                 position: absolute;
