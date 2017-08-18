@@ -412,7 +412,7 @@ ul.actions.vertical li > * {
     }
 
     .banner.style1 .logo .content {
-        font-size: 2.55vw;
+        font-size: 2.55vw !important;
     }
 
     .banner.style1 .content {
