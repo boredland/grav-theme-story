@@ -417,7 +417,9 @@ ul.actions.vertical li > * {
     }
 
     .banner.style1 .logo {
-        padding-top: 1rem !important
+        padding-top: 1rem !important;
+        top: 14vh !important;
+
     }
 
     .banner.style1 .logo .content {
