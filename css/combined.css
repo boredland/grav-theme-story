@@ -49,6 +49,7 @@ ul.langswitcher {
 
 .list-item a.u-url {
     font-size: 2.25rem;
+    text-decoration: none !important;
 }
 
 .list-item h2 {
