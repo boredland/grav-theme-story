@@ -142,10 +142,7 @@ h1 {
     max-width: 20rem;
     height: 3.75em;
     line-height: 3.75em;
-    border-top-left-radius: 3.75em;
-    border-top-right-radius: 3.75em;
-    border-bottom-right-radius: 3.75em;
-    border-bottom-left-radius: 3.75em;
+    border-radius: 3.75em;
     padding: 0 2.5em;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -155,10 +152,7 @@ h1 {
     font-size: .8rem;
     height: 4em;
     line-height: 4em;
-    border-top-left-radius: 4em;
-    border-top-right-radius: 4em;
-    border-bottom-right-radius: 4em;
-    border-bottom-left-radius: 4em;
+    border-radius: 4em;
     padding: 0 3em;
 }
 
@@ -175,10 +169,7 @@ h1 {
 input[type="text"] {
     -webkit-appearance: none;
     background-color: transparent;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
     border: 1px solid;
     color: inherit;
     display: block;
@@ -206,20 +197,14 @@ input[type="text"] {
 
 .image {
     border: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
     display: inline-block;
     position: relative;
 }
 
 .image img {
     display: block;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
 }
 
 ul {
@@ -304,10 +289,7 @@ ul.actions.vertical li > * {
 .banner.style1 .image {
     -webkit-flex-grow: 0;
     -webkit-flex-shrink: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0;
     width: 50%;
 }
 
@@ -318,10 +300,7 @@ ul.actions.vertical li > * {
     left: 0;
     width: 100%;
     height: 100%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 1680px) {
@@ -491,7 +470,6 @@ section {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -518,10 +496,6 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-@-ms-viewport {
-    width: device-width;
 }
 
 body {
@@ -671,7 +645,6 @@ input[type="text"] {
     background-color: transparent;
     border-radius: 4px;
     border: 0;
-    border: solid 1px;
     color: inherit;
     display: block;
     outline: 0;
@@ -814,7 +787,6 @@ ul.actions.vertical li > * {
     -ms-flex-direction: row;
     flex-direction: row;
     -moz-justify-content: -moz-flex-end;
-    -webkit-justify-content: -webkit-flex-end;
     -ms-justify-content: -ms-flex-end;
     justify-content: flex-end;
     position: relative;
