@@ -8899,12 +8899,10 @@ body.is-loading .items.onload-fade-in > * > .inner {
 
 .banner.style1 .logo .content {
     position: relative;
-    padding-left: 30%;
-    padding-right: 0;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 10px 0 0 30%;
     width: 100%;
-    font-size: 1.2647vw;
+    text-align: center;
+    font-size: 1.13vw;
     min-height: unset
 }
 
