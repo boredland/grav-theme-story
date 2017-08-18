@@ -411,6 +411,10 @@ ul.actions.vertical li > * {
         padding-top: 1rem !important
     }
 
+    .banner.style1 .logo .content {
+        font-size: 2.55vw;
+    }
+
     .banner.style1 .content {
         display: -webkit-flex;
         -webkit-flex-direction: column;
