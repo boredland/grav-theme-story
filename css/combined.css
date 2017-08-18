@@ -421,7 +421,7 @@ ul.actions.vertical li > * {
     }
 
     .banner.style1 .logo .content {
-        font-size: 2.55vw !important;
+        font-size: 2.22vw !important;
     }
 
     .banner.style1 .content {
@@ -591,7 +591,7 @@ ul.actions.vertical li > * {
     margin-top: auto;
     position: relative;
     margin-bottom: auto;
-    top: 33%
+    top: 39vh;
 }
 
 .banner.style1 .logo img {
