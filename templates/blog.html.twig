@@ -1,6 +1,6 @@
 {% embed 'partials/base.html.twig' %}
     {% block header %}
-        <header class="header" style="background: #5da5c1;padding-left: 8vw;padding-bottom: 2%;">
+        <header class="header" style="background: #368bc2;padding-left: 8vw;padding-bottom: 2%;">
             <a href="/">
                 <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}" style="
                 margin: 2% 2% -0.5vw 2%;
@@ -14,7 +14,13 @@
             ">
                 {{ theme_config.slogan }}
             </div>
-            <h1><span>{{ page.title }}</span></h1>
+            <h1 style="margin: 2vw 0vw -1.9vw 8.5vw;">
+                <span style="
+            background-color: white;
+            padding: 10px 40px 0px 30px;">
+                    {{ page.title }}
+                </span>
+            </h1>
 
         </header>
     {% endblock %}
