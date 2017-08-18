@@ -39,7 +39,20 @@ ul.langswitcher {
 }
 
 .blog p {
-    margin-bottom: .75rem
+    margin-bottom: 2.75rem;
+    margin-top: 1rem;
+}
+
+.list-item p {
+    margin-bottom: .75vw;
+}
+
+.list-item a.u-url {
+    font-size: 2.25rem;
+}
+
+.list-item h2 {
+    font-size: 1.75rem;
 }
 
 html, body, div, h1, h2, p, a, img, strong, ul, li, section {
