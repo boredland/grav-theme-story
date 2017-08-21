@@ -34,7 +34,9 @@
                 {% for child in collection %}
                     {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true, 'banner_img': header.banner_img} %}
                 {% endfor %}
+            {% if not activeChild() %}
             {% include "forms/form.html.twig" with { form: forms('application-form') } %}
+            {% endif %}
 
         </div>
     {% endblock %}
