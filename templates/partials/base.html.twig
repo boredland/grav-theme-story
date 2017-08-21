@@ -47,14 +47,11 @@
 
 <!-- Scripts -->
 {% block bottom %}
-    {% do assets.addJs('theme://js/util.min.js', {'priority':101, 'group':'bottom'}) %}
-    {% do assets.addJs('theme://js/main.min.js', {'priority':102, 'group':'bottom'}) %}
-    {% do assets.addJs('/user/plugins/form/assets/form.min.js',  {'priority':103, 'group':'bottom'}) %}
-
     {% do assets.addJs('theme://js/jquery.scrollex.min.js',  {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('https://cdn.jsdelivr.net/jquery.scrolly/0.1/jquery.scrolly.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
-
+    {% do assets.addJs('theme://js/util.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
+    {% do assets.addJs('theme://js/main.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', {'priority':102, 'group':'bottom'}) %}
 
     {{ assets.js('bottom') }}
@@ -69,6 +66,21 @@
     {{ assets.css('bottom') }}
 
 {% endblock %}
+
+<!--
+<script>var cb = function () {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = '{{ url('theme://css/combined.css') }}';
+        var h = document.getElementsByTagName('head')[0];
+        h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
+-->
 
 </body>
 </html>
