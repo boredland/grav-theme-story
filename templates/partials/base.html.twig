@@ -52,7 +52,7 @@
     {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('theme://js/util.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('theme://js/main.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
-    {% do assets.addJs('plugin://form/assets/form.min.js') %}
+    {% do assets.addJs('plugin://form/assets/form.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', {'priority':102, 'group':'bottom'}) %}
 
     {{ assets.js('bottom') }}
