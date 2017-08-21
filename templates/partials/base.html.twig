@@ -59,8 +59,13 @@
     {% do assets.addJs('theme://js/main.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
 
     {{ assets.js('bottom') }}
+
+    {% do assets.addCss('theme://css/combined.css',{'priority':100, 'group':'bottom','loading':'async'}) %}
+    {{ assets.css('bottom') }}
+
 {% endblock %}
 
+<!--
 <script>var cb = function () {
         var l = document.createElement('link');
         l.rel = 'stylesheet';
@@ -73,6 +78,7 @@
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
 </script>
+-->
 
 </body>
 </html>
