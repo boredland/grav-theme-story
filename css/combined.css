@@ -957,8 +957,7 @@ body.is-loading .banner.onload-image-fade-in .image img{opacity:0}
 .banner.style1.content-align-right{text-align:right}
 @media screen and (orientation:portrait){.banner.style1.content-align-right{text-align:center}
 }
-.banner.style1.image-position-left .image img{-moz-object-position:left;-webkit-object-position:left;-ms-object-position:left;object-position:left}
-.banner.style1.image-position-right .image img{-moz-object-position:right;-webkit-object-position:right;-ms-object-position:right;object-position:right}
+.banner.style1.image-position-left .image img{-moz-object-position:left;-webkit-object-position:left;-ms-object-position:left;object-position:left;height:100%;width:auto}
 .banner.style2{padding:5.25rem 5.25rem 3.25rem 5.25rem;-moz-align-items:center;-webkit-align-items:center;-ms-align-items:center;align-items:center;display:-moz-flex;display:-webkit-flex;display:-ms-flex;display:flex;-moz-justify-content:center;-webkit-justify-content:center;-ms-justify-content:center;justify-content:center;background-color:inherit;position:relative;text-align:center;overflow-x:hidden}
 .banner.style2 .content{padding:5.25rem 5.25rem 3.25rem 5.25rem;position:relative;width:40rem;max-width:100%;background-color:inherit;border-radius:.5rem;margin-bottom:2rem;z-index:1}
 .banner.style2 .image{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:0;-webkit-flex-shrink:0;-ms-flex-shrink:0;flex-shrink:0;position:absolute;width:100%;height:100%;top:0;left:0;border-radius:0}
