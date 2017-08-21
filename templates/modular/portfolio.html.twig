@@ -9,7 +9,7 @@
         {% for item in page.header.portfolio %}
             <article>
                 <div class="image" style="background-color: {{ item.project_background }};">
-                    <img src="{{ page.media[item.projectimg].url }}" alt="{{ item.project_title }}">
+                    <img src="{{ page.media[item.projectimg].url }}" alt="{{ item.project_title | regex_replace(['"'], ['\'']) }}">
                 </div>
                 <div class="caption">
                     <h3>{{ item.project_title }}</h3>
