@@ -1754,9 +1754,6 @@ body.is-loading .items.onload-fade-in > * > .inner{opacity:0}
 .banner.style1 .logo .content{position:relative;padding:10px 0 0 30%;width:100%;text-align:center;font-size:1.13vw;min-height:unset}
 .spotlight p{margin:0}
 .spotlight .image{background-color:transparent}
-.spotlight.orient-right .image img{object-position:center}
-.spotlight.orient-left .image img{object-position:center}
-.spotlight.style1 .image img{object-fit:contain}
 .gallery.style2 article .image img{padding-right:15px;padding-left:15px;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}
 .gallery.style2 article .image{height:300px}
 .alert.notices.green p{margin-top:10px;margin-bottom:10px}
