@@ -1,5 +1,6 @@
 en:
   TRANSLATION_TEST: Antimatter!
+  APPLICATION_FORM: Application Form
   BLOG:
     ITEM:
       CONTINUE_READING: Continue reading...
@@ -28,6 +29,7 @@ en:
 
 de:
   TRANSLATION_TEST: Antimatter!
+  APPLICATION_FORM: Bewerbungsformular
   BLOG:
     ITEM:
       CONTINUE_READING: Weiterlesen...
