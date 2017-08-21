@@ -6,14 +6,14 @@
         <h1>{{ page.title }}</h1>
         {{ page.content }}
         <ul class="actions vertical">
-            <li><a href="#first" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
+            <li><a href="#{{ page.slug }}" class="button big wide smooth-scroll-middle">{{ header.readmore }}</a></li>
         </ul>
     </div>
     <div class="image">
-        {{ page.media[header.background_img] }}
+        {{ page.media[header.background_img].html('header background','header background') }}
         {% include 'partials/langswitcher.html.twig' %}
         <div class="logo">
-            <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}">
+            <img src="{{ url('theme://images/') ~ '/' ~ theme_config.logo_img }}" alt="{{ site.title|e('html') }}">
             <div class="content">{{ theme_config.slogan }}</div>
         </div>
 
