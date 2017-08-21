@@ -818,7 +818,7 @@ ul.actions.vertical li > * {
 }
 .banner.style1.image-position-right .image .logo img{height:auto;width:100%}
 
-.banner.style1.image-position-right .image img{-moz-object-position:right;-webkit-object-position:right;-ms-object-position:right;object-position:right}
+.banner.style1.image-position-right .image img{-moz-object-position:right;-webkit-object-position:right;-ms-object-position:right;object-position:right;height:100%;width:auto}
 
 .banner .image {
     background-color: rgba(0, 0, 0, .125);
