@@ -562,7 +562,7 @@ h1, h2, h1, h2, h3 {
     }
 
     .banner.style1.fullscreen .content {
-        min-height: 50vh;
+        min-height: unset;
     }
 
     .banner.style1.fullscreen .image {
