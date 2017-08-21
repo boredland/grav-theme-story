@@ -17,8 +17,6 @@
             width: 35vw;
             height: 35vw;
             margin: auto;
-            object-fit: contain;
-            object-position: center;
             ">
         <img src="{{ page.media[header.spotlight_img].url }}" style="
         {% if header.spotlight_fit == 'cover' %}
@@ -27,12 +25,12 @@
                 right: -9999px;
                 left: -9999px;
                 width: auto;
-                height: inherit;
+                height: 100%;
                 {% elseif header.spotlight_fit == 'contain' %}
                         position: relative;
                         max-height: 100%;
                         max-width: 100%;
-                        width: inherit;
+                        width: 100%;
                         height: inherit;
         {% endif %}
                 ">
