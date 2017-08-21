@@ -17,3 +17,10 @@ form:
             header.background_color:
               type: colorpicker
               label: Choose a color
+            show_form:
+              type: toggle
+              label: Wether the application form is shown
+              default: 1
+              options:
+                0: false
+                1: true
