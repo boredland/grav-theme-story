@@ -409,20 +409,7 @@ h3 a {
 h3 {
     font-size: 1.5rem;
 }
-/*
-html, body, div, h1, p, a, img, strong, ul, li, section, html, body, div, h1, h2, p, a, img, ul, li {
-    border: 0;
-    font-family: inherit;
-    font-size: inherit;
-    font-style: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-*/
+
 section, header {
     display: block;
 }
@@ -436,16 +423,6 @@ section, header {
     box-shadow: none !important;
 }
 
-/*
-html, body, div, span, h1, p, a, img, strong, ul, li, section, html, body, div, span, h1, h2, h3, p, a, em, img, ul, li, header, time, html, body, div, span, h1, h2, p, a, img, ul, li, header {
-    border: 0;
-    font-family: Roboto, Helvetica, sans-serif;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}*/
-
 h1, h2, h1, h2, h3 {
     color: #000;
     font-weight: 300;
@@ -454,7 +431,7 @@ h1, h2, h1, h2, h3 {
     margin: 0 0 1rem;
 }
 
-@media screen and max-width 480px {
+@media screen and (max-width: 480px) {
 
     html, body {
         min-width: 320px;
@@ -481,7 +458,7 @@ h1, h2, h1, h2, h3 {
     }
 }
 
-@media screen and max-width 1680px {
+@media screen and (max-width: 1680px) {
 
     html {
         font-size: 14pt;
@@ -492,7 +469,7 @@ h1, h2, h1, h2, h3 {
     }
 }
 
-@media screen and max-width 1280px {
+@media screen and (max-width: 1280px) {
 
     html {
         font-size: 12pt;
@@ -507,7 +484,7 @@ h1, h2, h1, h2, h3 {
     }
 }
 
-@media screen and max-width 736px {
+@media screen and (max-width: 736px) {
 
     html {
         font-size: 11pt;
@@ -530,21 +507,21 @@ h1, h2, h1, h2, h3 {
     }
 }
 
-@media screen and max-width 360px {
+@media screen and (max-width: 360px) {
 
     html {
         font-size: 10pt;
     }
 }
 
-@media screen and max-width 980px {
+@media screen and (max-width: 980px) {
 
     .banner.style1 .content {
         padding: 3.75rem 3rem 1.75rem;
     }
 }
 
-@media screen and orientation portrait {
+@media screen and (orientation: portrait) {
     .banner.style1 {
         flex-direction: column-reverse;
         -moz-flex-direction: column-reverse;
