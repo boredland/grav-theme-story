@@ -52,3 +52,10 @@ fabric.properties
 
 Würde .gitignore löschen
 Würde .idea/ löschen
+Würde .idea/inspectionProfiles/ löschen
+Würde .idea/modules.xml löschen
+Würde .idea/story.iml löschen
+Würde fonts/fontawesome-webfont.svg.new löschen
+Würde images/favicon.png löschen
+Würde images/logo.svg löschen
+Würde images/logo.svg.new löschen
