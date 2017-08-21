@@ -7,10 +7,14 @@ form:
       fields:
         content:
           fields:
-              header.readmore:
+              header.readmore_text:
                 type: text
                 label: Readmore-Text
                 default: "Read more"
+              header.readmore_link:
+                type: text
+                label: link for the readmore-link
+                default: #
               header.subtitle:
                 type: text
                 label: Slogan below the Logo
