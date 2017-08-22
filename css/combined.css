@@ -129,6 +129,12 @@ ul.actions.vertical li > *{margin-bottom:0}
     width: 100%;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .spotlight.style1 .image img.contain {
+        width: auto;
+    }
+}    
+
 @media screen and (max-width:1680px){.spotlight.style1 .content{padding:5rem 5rem 3rem}
 }
 @media screen and (max-width:1280px){.spotlight.style1 .content{padding:4rem 4rem 2rem}
