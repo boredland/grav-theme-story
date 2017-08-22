@@ -21,6 +21,7 @@ form:
                 options:
                   left: 'left'
                   right: 'right'
+                  above: 'above'
               header.spotlight_img:
                 type: filepicker
                 preview_images: true
@@ -35,12 +36,5 @@ form:
                 options:
                   contain: 'contain'
                   cover: 'cover'
-              header.spotlight_arrange_before:
-                  type: toggle
-                  label: arrange the image below the conent
-                  default: 0
-                  options:
-                    false: 0
-                    true: 1
 
              

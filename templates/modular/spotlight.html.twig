@@ -2,11 +2,6 @@
 <section
         class="spotlight style1 orient-{{ header.orient }} content-align-left image-position-center onscroll-image-fade-in"
         id="{{ page.slug }}">
-    {% if header.spotlight_arrange_before  %}
-        <div class="image {{ page.slug }}"{% if header.spotlight_img_background %} style="background-color: {{ header.spotlight_img_background }};"{% endif %}>
-            <img src="{{ page.media[header.spotlight_img].url }}" alt="{{ page.title }}" class="{{ header.spotlight_fit }}">
-        </div>
-    {% endif %}
     <div class="content">
         <h2>{{ page.title }}</h2>
         {{ page.content }}
@@ -16,10 +11,8 @@
             {% endif %}
         </ul>
     </div>
-    {% if not header.spotlight_arrange_before  %}
         <div class="image {{ page.slug }}"{% if header.spotlight_img_background %} style="background-color: {{ header.spotlight_img_background }};"{% endif %}>
             <img src="{{ page.media[header.spotlight_img].url }}" alt="{{ page.title }}" class="{{ header.spotlight_fit }}">
         </div>
-    {% endif %}
 
 </section>
