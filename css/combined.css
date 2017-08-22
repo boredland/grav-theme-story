@@ -164,6 +164,7 @@ ul.actions.vertical li > *{margin-bottom:0}
     right: -9999px;
     left: -9999px;
     height: 100%;
+    opacity: 1 !important;
 }
 
 .spotlight.style1 .image img.cover {
