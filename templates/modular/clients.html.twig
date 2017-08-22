@@ -6,12 +6,12 @@
         <div class="items style1 medium onscroll-fade-in clients">
             {% for client in page.header.clients %}
                 <section class="client">
-                    <div class="image" style="background-color: {{ client.background }};">
+                    <h2>{{ client.name }}</h2>
+                    <div class="image">
                         <img src="{{ page.media[client.logo].url }}" alt="{{ client.name }}" title="{{ client.name }}">
                     </div>
                 </section>
             {% endfor %}
-
         </div>
     </div>
 </section>
