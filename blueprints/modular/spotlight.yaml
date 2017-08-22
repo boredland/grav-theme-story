@@ -35,5 +35,6 @@ form:
                 options:
                   contain: 'contain'
                   cover: 'cover'
+                  under: 'under'
 
              
