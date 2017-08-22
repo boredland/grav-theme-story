@@ -1058,6 +1058,11 @@ section.style1.orient-above .image {
     width: 100%;
 }
 
+section.style1.orient-above .image img.cover {
+    width: 100%;
+    height: auto;
+}
+
 .banner.style1.orient-right{-moz-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 @media screen and (orientation:portrait){.banner.style1.orient-right{-moz-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 }
