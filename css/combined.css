@@ -25,7 +25,7 @@ ul{list-style:none}
 *,::before,::after{box-sizing:border-box}
 @media screen and (max-width:480px){html, body{min-width:320px}
 }
-body{background-color:#fff;background-position:initial initial;background-repeat:initial initial}
+body{background-color:#fff;}
 html{font-size:18pt}
 @media screen and (max-width:1680px){html{font-size:14pt}
 }c
