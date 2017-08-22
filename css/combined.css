@@ -190,7 +190,7 @@ ul.actions.vertical li > *{margin-bottom:0}
     .spotlight.style1 .image{
         width:100% !important;
         height:auto !important;
-        min-height: 50vh;
+        min-height: 37vh;
     }
 }
 .spotlight.style1.orient-right{-webkit-flex-direction:row-reverse}
