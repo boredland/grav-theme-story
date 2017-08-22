@@ -1754,6 +1754,9 @@ body.is-loading .items.onload-fade-in > * > .inner{opacity:0}
 .gallery.style2 article .image{height:300px}
 .alert.notices.green p{margin-top:10px;margin-bottom:10px}
 .contact-form .buttons{margin-top:15px}
+section.client h2 {
+    display: none;
+}
 .client .image{height:220px}
 .client .image img{object-fit:contain;width:250px;height:150px;position:absolute;top:50%;left:50%;margin-right:-50%;transform:translate(-50%, -50%)}
 .items.style1.medium > *{padding:15px}
