@@ -47,7 +47,8 @@
     {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('theme://js/util.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
     {% do assets.addJs('theme://js/main.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
-    {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', {'priority':102, 'group':'bottom'}) %}
+    {% do assets.addJs('https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js', {'priority':103, 'group':'bottom','loading':'async'}) %}
+    {% do assets.addJs('https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', {'priority':102, 'group':'bottom','loading':'async'}) %}
     {{ assets.js('bottom') }}
     <script>
         WebFont.load({
@@ -56,6 +57,13 @@
             }
         });
     </script>
+    {% if theme_config.ga_code %}
+    <script>
+        var galite = galite || {};
+        galite.UA = '{{ theme_config.ga_code }}';
+        galite.anonymizeIp = true;
+    </script>
+    {% endif %}
     {% do assets.addCss('theme://css/combined.css',{'priority':100, 'group':'bottom','loading':'async'}) %}
     {{ assets.css('bottom') }}
 {% endblock %}

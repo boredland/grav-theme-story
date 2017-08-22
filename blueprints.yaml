@@ -15,6 +15,9 @@ license: MIT
 form:
   validation: loose
   fields:
+    ga_code:
+      label: Code for Google Analytics
+      type: text
     file_upload:
       type: file
       label: Upload Logos
