@@ -11,9 +11,7 @@
             {% endif %}
         </ul>
     </div>
-    <div class="image {{ page.slug }}" style="
-            background-color: {{ header.spotlight_img_background }};
-            ">
+    <div class="image {{ page.slug }}"{% if header.spotlight_img_background %} style="background-color: {{ header.spotlight_img_background }};"{% endif %}>
         <img src="{{ page.media[header.spotlight_img].url }}" alt="{{ page.title }}" class="{{ header.spotlight_fit }}">
     </div>
 </section>
