@@ -111,7 +111,6 @@ ul.actions.vertical li > *{margin-bottom:0}
     position:relative;
     overflow-x:hidden;
     text-align:left;
-    max-height: 35vw;
     -moz-flex-direction:row;
     -ms-flex-direction:row;
     flex-direction:row;
