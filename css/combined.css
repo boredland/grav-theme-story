@@ -98,7 +98,7 @@ ul.actions.vertical li > *{margin-bottom:0}
     .banner.style1.fullscreen .image{height:50vh}
 }
 .banner .image{background-color:rgba(0, 0, 0, 0.121569)}
-.spotlight.style1{-webkit-align-items:stretch;display:-webkit-flex;-webkit-flex-direction:row;position:relative;overflow-x:hidden;text-align:left;max-height: 35vw;}
+.spotlight.style1{-webkit-align-items:stretch;display:-webkit-flex;-webkit-flex-direction:row;position:relative;overflow-x:hidden;text-align:left}
 .spotlight.style1 .content{padding:7rem 7rem 5rem;-webkit-align-self:center;-webkit-flex-grow:1;-webkit-flex-shrink:1;width:65%;max-width:64rem;margin:0 auto}
 .spotlight.style1 .image{
     -webkit-flex-grow:0;
