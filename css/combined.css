@@ -204,7 +204,8 @@ ul.actions.vertical li > *{margin-bottom:0}
 .banner.style1 .logo{height:auto;padding-left:10%;padding-right:10%;margin-top:auto;position:relative;margin-bottom:auto;top:39vh;}
 .banner.style1 .logo img{position:relative}
 .banner.style1 .logo .content{position:relative;padding:10px 0 0 12vw;width:100%;font-size:1.25vw}
-@media screen and (orientation:portrait){.banner.style1 .logo .content{font-size:2.52vw;min-height:unset;padding:10px 0 0 23vw}
+@media screen and (orientation:portrait){
+    .banner.style1 .logo .content{font-size:2.52vw;min-height:unset;padding:10px 0 0 23vw}
 }
 .spotlight.style1 .content{padding:2.5rem 2.5rem}
 .spotlight p{margin:0;text-align:left}
@@ -1035,8 +1036,11 @@ body.is-loading .banner.onload-image-fade-in .image img{opacity:0}
     .spotlight.style1 p{text-align:left}
 }
 .banner.style1.fullscreen{min-height:100vh}
-@media screen and (orientation:portrait){.banner.style1.fullscreen .content{min-height:50vh}
+@media screen and (orientation:portrait){
+    .banner.style1.fullscreen .content{min-height:50vh}
     .banner.style1.fullscreen .image{height:50vh}
+    .banner.style1.fullscreen .image img {width: 100%}
+
 }
 .banner.style1.orient-right{-moz-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 @media screen and (orientation:portrait){.banner.style1.orient-right{-moz-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
