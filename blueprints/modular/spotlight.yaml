@@ -35,6 +35,12 @@ form:
                 options:
                   contain: 'contain'
                   cover: 'cover'
-                  under: 'under'
+              header.spotlight_arrange_before:
+                  type: toggle
+                  label: arrange the image below the conent
+                  default: 0
+                  options:
+                    false: 0
+                    true: 1
 
              
