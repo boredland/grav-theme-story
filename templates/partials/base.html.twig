@@ -1,12 +1,10 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE HTML>
-
 <html lang="{{ grav.language.getActive }}">
 <head>
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}"/>
     <link rel="canonical" href="{{ page.url(true, true) }}"/>
     {% do assets.addCss('theme://css/critical_tidy.css',{'priority':101, 'group':'head'}) %}
@@ -16,14 +14,12 @@
     {{ assets.js('head') }}
 </head>
 <body>
-
 <!-- Wrapper -->
 <div id="wrapper" class="divided">
     {% block header %}
     {% endblock %}
     {% block content %}
     {% endblock %}
-
     <!-- Footer -->
     <footer class="wrapper style1 align-center">
         <div class="inner">
