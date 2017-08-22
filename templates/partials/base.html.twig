@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="{{ grav.language.getActive }}">
 <head>
-    <title>{% if not page.modular and header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <title>{% if not page.home() and header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     {% include 'partials/metadata.html.twig' %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}"/>
