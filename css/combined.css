@@ -184,9 +184,14 @@ ul.actions.vertical li > *{margin-bottom:0}
 }
 @media screen and (max-width:736px){.spotlight.style1 .content{padding:2.5rem 2rem .5rem}
 }
-@media screen and (max-width:736px) and (orientation:portrait){.spotlight.style1{-webkit-flex-direction:column-reverse;text-align:center !important}
+@media screen and (max-width:736px) and (orientation:portrait){
+    .spotlight.style1{-webkit-flex-direction:column-reverse;text-align:center !important}
     .spotlight.style1 .content{width:100%}
-    .spotlight.style1 .image{width:100% !important;height:auto !important;}
+    .spotlight.style1 .image{
+        width:100% !important;
+        height:auto !important;
+        min-height: 50vh;
+    }
 }
 .spotlight.style1.orient-right{-webkit-flex-direction:row-reverse}
 @media screen and (max-width:736px) and (orientation:portrait){.spotlight.style1.orient-right{-webkit-flex-direction:column-reverse}
