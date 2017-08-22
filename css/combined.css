@@ -1054,6 +1054,10 @@ section.style1.orient-above .content {
     text-align: center;
 }
 
+section.style1.orient-above .content p {
+    text-align: center;
+}
+
 section.style1.orient-above .image {
     width: 100%;
 }
