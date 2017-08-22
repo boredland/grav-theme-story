@@ -118,15 +118,15 @@ ul.actions.vertical li > *{margin-bottom:0}
     bottom: -9999px;
     right: -9999px;
     left: -9999px;
-    height: inherit;
+    height: 100%;
 }
+
 .spotlight.style1 .image img.cover {
     width: auto;
 }
 
 .spotlight.style1 .image img.contain {
-    width: inherit;
-
+    width: 100%;
 }
 
 @media screen and (max-width:1680px){.spotlight.style1 .content{padding:5rem 5rem 3rem}
