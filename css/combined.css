@@ -1046,6 +1046,18 @@ body.is-loading .banner.onload-image-fade-in .image img{opacity:0}
     .banner.style1.fullscreen .image img {width: 100%}
 
 }
+section.style1.orient-above {
+    flex-direction: column;
+}
+
+section.style1.orient-above .content {
+    text-align: center;
+}
+
+section.style1.orient-above .image {
+    width: 100%;
+}
+
 .banner.style1.orient-right{-moz-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 @media screen and (orientation:portrait){.banner.style1.orient-right{-moz-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 }
